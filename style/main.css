@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+ 
+:root{
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --softBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --gray: rgb(113, 145, 194);
+}
+*{
+    margin:0;
+    padding: 0;
+    top:0;
+    left: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height:100vh;
+
+    background-color: var(--mainBG);
+    color: white;
+    font-family: "Outfit";
+    
+}
+main{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    height: 510px;
+    width: 310px;
+    border-radius: 10px;
+    background: var(--cardBG);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-img {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    cursor: pointer;
+  
+}
+.box-img :nth-child(2){
+    top: 0;
+   width: 100%; 
+   height: 100%;
+   border-radius: 10px;
+}
+.olho{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.box-img .olho img{
+    width: 50px;
+}
+.box-img:hover .olho{
+    background:hsla(178, 100%, 50%, 0.548);
+    display: flex;
+   
+}
+.texto h1{
+    margin-top: 20px;
+ font-size: 20px;
+ margin-bottom: 10px;
+ cursor: pointer;
+}
+.texto h1:hover{
+    color: var(--Cyan);
+}
+.texto p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #8196b4;
+}
+.informacoes{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin-bottom: 20px;
+
+}
+.informacoes :nth-child(1){
+    color:var(--Cyan);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informacoes :nth-child(2){
+    color:#8196b4;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informacoes img{
+    margin-right: 5px;
+}
+.linha{
+    margin-bottom: 10px;
+    height: 1px;
+            background-color: var(--line);
+            border: none;
+}
+.perfil{ 
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+.perfil p{
+    color: #8196b4;
+    margin-top: 18px;
+    
+}
+.perfil span{
+    color: white;
+    cursor:pointer;
+}
+.perfil span:hover{
+    color: var(--Cyan);
+}
+.perfil .texto-criador{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.perfil .criador{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.perfil .criador img{
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    width: 30px;
+   margin-right: 20px;
+  
+}
